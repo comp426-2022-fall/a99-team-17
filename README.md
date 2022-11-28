@@ -10,10 +10,9 @@ Put the name of your project in the header above.
 You will change everything below to be the main technical documentation, as outlined below.
 
 ## Setup Instructions
-1. Clone the repository. 
-2. `npm install` - Install dependencies for your package.
-3. `npm start` - Start app.
-4. Navigate to localhost:5555/
+1. To install, clone the repository and run `npm install` inside the directory.
+2. To run, use `npm start`.
+3. Navigate to localhost:5555/
 
 
 ## First steps
