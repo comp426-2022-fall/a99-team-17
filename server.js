@@ -1,4 +1,6 @@
 import express from 'express';
+
+const db = require('better-sqlite3');
 const app = express();
 
 import minimist from minimist;
