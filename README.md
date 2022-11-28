@@ -1,18 +1,16 @@
 # a99-team-17 Final Project
-Team 17's final project
+Group 17's final project
 
 ## Summary: 
-
-COMP426 final project template boilerplate.
-All your code and documentation goes here.
-Change this text to be a brief description of your final project.
-Put the name of your project in the header above.
-You will change everything below to be the main technical documentation, as outlined below.
+COMP 426 final project for group 17. This project allows users to keep track of their daily tasks. With an account, users can quickly add a task to their list.
 
 ## Setup Instructions
 1. To install, clone the repository and run `npm install` inside the directory.
 2. To run, use `npm start`.
 3. Navigate to localhost:5555/
+
+## Demo
+
 
 
 ## First steps
