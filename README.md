@@ -2,7 +2,7 @@
 Group 17's final project
 
 ## Summary: 
-COMP 426 final project for group 17. This project allows users to keep track of their daily tasks. With an account, users can quickly add a task to their list.
+COMP 426 final project for group 17. This project allows users to keep track of their daily tasks. With an account, users can quickly add and remove a task to their list.
 
 ## Setup Instructions
 1. To install, clone the repository and run `npm install` inside the directory.
@@ -11,21 +11,6 @@ COMP 426 final project for group 17. This project allows users to keep track of 
 
 ## Demo
 
-
-
-## First steps
-
-Other steps that you will need to take after your team has accepted the assignment:
-
-1. Choose a license and update the LICENSE file accordingly. 
-2. Edit this README.md file and use it as the main location of your technical documentation with links out to information contained under `/docs/`.
-3. Create a `/docs/` directory for more elaborate documentation of your API, planning notes, etc.
-4. Make sure that all of your team members have access to the repository as administrators.
-5. Create a project under the **Projects** tab. Use this to manage your planning. Create a To-do list, etc. Explore the tools available and user them to manage your project.
-7. Assign team roles and include a listing of those roles in this README.md file or in another file under `/docs/`.
-8. Then put your entire development workflow in this repository.
-9. Use **Pull requests** to propose changes and incorporate them into your code from various team members. 
-10. Use **Issues** to identify and track bugs and also to communicate about various aspects of the project.
 
 ## Team mangement
 Team management details can be found in the following file: [roles.md](/docs/roles.md).
@@ -52,8 +37,10 @@ Some basic roles you will want to consider:
 You will notice that there are more roles than people in your group.
 That is because you will all be doing a hybrid job of managing a thing while working on other things.
 
-## Assignment instructions
+## Planning
+Our planning details are available in the following file: [planning_notes.md](/docs/planning_notes.md). Additionally, we included a GitHub project board to keep track of our progress.
 
-And that is about all you need to get started.
+## API Endpoints
+The details of our API endpoints can be found in the follwoing file: [api_documentation.md](/docs/api_documentation.md).
 
-Good skill and be creative!
+## Future
