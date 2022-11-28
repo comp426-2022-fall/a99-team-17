@@ -1,7 +1,7 @@
 # a99-team-17 Final Project
 Team 17's final project
 
-## Summary 
+## Summary: 
 
 COMP426 final project template boilerplate.
 All your code and documentation goes here.
