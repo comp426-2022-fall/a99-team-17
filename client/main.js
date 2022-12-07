@@ -1,12 +1,25 @@
+import { json } from "express";
+
 let addToDoButton = document.getElementById('addToDo');
 let toDoContainer = document.getElementById('toDoContainer');
 let inputField = document.getElementById('inputField');
 
 
-addToDoButton.addEventListener('click', function(){
+addToDoButton.addEventListener('click',async ()=>{
+    console.log("HELLO")
+    const response = await fetch('http://localhost:5555/clicks')
+
+    const data = await response.json()
+    console.log(data)
+ 
     var paragraph = document.createElement('p');
     paragraph.classList.add('paragraph-styling');
     paragraph.innerText = inputField.value;
+    // const request = await fetch('http://localhost:5555/clicks', {method: "POST", body: JSON.stringify({
+    //     todo: paragraph.innerText
+    // })})
+    //const todo = await request.json()
+    //console.log(todo)
     toDoContainer.appendChild(paragraph);
     inputField.value = "";
     paragraph.addEventListener('click', function(){
@@ -20,14 +33,6 @@ addToDoButton.addEventListener('click', function(){
             toDoContainer.removeChild(paragraph);
         }
     })
-
-    // fetch('/clicked', {method: 'POST'})
-    // .then(function(response) {
-    //     if(response.ok) {
-    //         console.log('Click was recorded');
-    //         return;
-    //     } throw new Error('Request failed.');
-    // })
     // .catch(function(error) {
     //     console.log(error);
     // });
