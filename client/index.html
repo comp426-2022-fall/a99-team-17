@@ -8,7 +8,27 @@
     <body>
         <h1>To Do List</h1>
         <div class="container">
-            <input id="inputField" type="text" placeholder="Type your item here, then click the '+' to add it!"><button id="addToDo">+</button>
+            <input id="inputField" type="text" placeholder="Type your item here, then click the '+' to add it!"><button id="addToDo" onclick="create()">+</button>
+            <script>
+                function create() {
+                    var paragraph = document.createElement('p');
+                    paragraph.classList.add('paragraph-styling');
+                    paragraph.innerText = inputField.value;
+                    toDoContainer.appendChild(paragraph);
+                    inputField.value = "";
+                    paragraph.addEventListener('click', function(){
+                        paragraph.style.textDecoration = 'line-through';
+                    })
+                    paragraph.addEventListener('dblclick', function(){
+                    paragraph.style.textDecoration = 'none';
+                    })
+                    paragraph.addEventListener('click', function(x){
+                        if(x.detail === 3){
+                            toDoContainer.removeChild(paragraph);
+                        }
+                    })
+                }
+            </script>
             <div class="to-dos" id="toDoContainer">
             </div>
         </div>

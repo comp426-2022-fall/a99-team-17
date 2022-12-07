@@ -21,7 +21,7 @@ addToDoButton.addEventListener('click', async() => {
     // })})
     //const todo = await request.json()
     //console.log(todo)
-    
+
     toDoContainer.appendChild(paragraph);
     inputField.value = "";
     paragraph.addEventListener('click', function(){
@@ -36,3 +36,22 @@ addToDoButton.addEventListener('click', async() => {
         }
     })
 });
+
+function create() {
+    var paragraph = document.createElement('p');
+    paragraph.classList.add('paragraph-styling');
+    paragraph.innerText = inputField.value;
+    toDoContainer.appendChild(paragraph);
+    inputField.value = "";
+    paragraph.addEventListener('click', function(){
+        paragraph.style.textDecoration = 'line-through';
+    })
+    paragraph.addEventListener('dblclick', function(){
+       paragraph.style.textDecoration = 'none';
+    })
+    paragraph.addEventListener('click', function(x){
+        if(x.detail === 3){
+            toDoContainer.removeChild(paragraph);
+        }
+    })
+}
