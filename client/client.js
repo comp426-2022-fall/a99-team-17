@@ -15,11 +15,13 @@ addToDoButton.addEventListener('click', async() => {
     var paragraph = document.createElement('p');
     paragraph.classList.add('paragraph-styling');
     paragraph.innerText = inputField.value;
+
     // const request = await fetch('http://localhost:5555/clicks', {method: "POST", body: JSON.stringify({
     //     todo: paragraph.innerText
     // })})
     //const todo = await request.json()
     //console.log(todo)
+    
     toDoContainer.appendChild(paragraph);
     inputField.value = "";
     paragraph.addEventListener('click', function(){
