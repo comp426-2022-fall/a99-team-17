@@ -1,7 +1,6 @@
-import express, { response, Router } from 'express';
+import express, { response } from 'express';
 import bodyParser from 'body-parser';
 const app = express();
-const router = express.Router();
 
 import path from 'path';
 const __dirname = path.resolve();
@@ -13,10 +12,6 @@ const db = new sqlite3('data.db');
 db.pragma('journal_mode = WAL');
 
 app.use(express.static('../client'));
-
-//import {MongoClient} from 'mongodb';
-// const url = 'mongodb://0.0.0.0:27017';
-//const client = new MongoClient(url);
 
 
 //Misagh 
