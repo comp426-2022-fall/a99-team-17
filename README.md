@@ -2,7 +2,7 @@
 Group 17's final project
 
 ## Summary: 
-COMP 426 final project for group 17. This project allows users to keep track of their daily tasks. With an account, users can quickly add and remove a task to their list.
+COMP 426 final project for group 17. This project allows users to keep track of their daily tasks. With an account, users can quickly add and remove a task to their list to stay on top of their work.
 
 ## Setup Instructions
 1. To install, clone the repository and run `npm install` inside the directory.
