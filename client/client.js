@@ -5,7 +5,7 @@ let toDoContainer = document.getElementById('toDoContainer');
 let inputField = document.getElementById('inputField');
 
 
-addToDoButton.addEventListener('click',async ()=>{
+addToDoButton.addEventListener('click', async() => {
     console.log("HELLO")
     const response = await fetch('http://localhost:5555/clicks')
 
