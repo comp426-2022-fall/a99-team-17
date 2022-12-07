@@ -10,10 +10,10 @@ app.use(bodyParser.urlencoded({extended: true}));
 // import db from 'better-sqlite3';
 // const db = db();
 
-app.use('/', router);
+app.use(express.static('public'));
 
 //import {MongoClient} from 'mongodb';
-const url = 'mongodb://0.0.0.0:27017';
+// const url = 'mongodb://0.0.0.0:27017';
 //const client = new MongoClient(url);
 
 
@@ -32,22 +32,6 @@ let db;
 
 const dbName = "a99";
 
-// async function main() {
-//     await client.connect();
-//     console.log('Connected successfully to server');
-//     //const db = client.db(dbName);
-//     const collection = db.collection('documents');
-
-//     app.listen(port, function(err) {
-//         if(err) { 
-//             console.log(err);
-//             console.log("server listening on port: ", port);
-//         }
-//     });
-
-//     return 'done.';
-// }
-
 import minimist from 'minimist';
 const args = minimist(process.argv.slice(2));
 
@@ -59,40 +43,6 @@ if (args.port) {
     port = args.port;
 }
 
-// app.post('/clicked', (req, res) => {
-//     const click = {clickTime: new Date()};
-//     console.log(click);
-//     console.log(db);
-
-//     db.collection('clicks').save(click, (err, result) => {
-//         if (err) {
-//             return console.log(err);
-//         }
-//         console.log('click added to db');
-//       res.sendStatus(201);
-//     })
-// })
-
-app.get('/clicks', (req, res) => {
-    console.log("clicks");
-    // db.collection('clicks').find().toArray((err, result) => {
-    //   if (err) return console.log(err);
-    //   res.send(result);
-    // });
-    res.header('Access-Control-Allow-Origin', '*');
-    res.send({
-        click: "I clicked"
-    })
-});
-
-app.post('/aclickss', async (req, res) => {
-
-    const body = req.body;
-    console.log(body)
-    res.send(body)
-
-});
-
 app.listen(port, function(err) {
     if(err) { 
         console.log(err);
@@ -100,8 +50,20 @@ app.listen(port, function(err) {
     }
 });
 
+app.get('/', (req, res) => {
+    res.send("Hello, world!");
+});
 
-// main()
-//   .then(console.log)
-//   .catch(console.error)
-//   .finally(() => client.close());
+app.get('/clicks', (req, res) => {
+    console.log("clicks");
+    res.header('Access-Control-Allow-Origin', '*');
+    res.send({
+        click: "I clicked"
+    });
+});
+
+app.post('/aclickss', async (req, res) => {
+    const body = req.body;
+    console.log(body);
+    res.send(body);
+});

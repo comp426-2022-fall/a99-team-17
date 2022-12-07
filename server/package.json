@@ -1,14 +1,14 @@
 {
   "name": "server",
   "version": "1.0.0",
-  "description": "",
+  "description": "server side code",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "node server.js --port=5555",
     "start": "node server.js"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "mariana-perezh",
+  "license": "GPL-3.0-or-later",
   "dependencies": {
     "better-sqlite3": "^8.0.0",
     "body-parser": "^1.20.1",
