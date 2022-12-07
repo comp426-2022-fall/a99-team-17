@@ -11,31 +11,19 @@ html, body {
 
 #inputField {
     width: 300px;
-    height: 46px;
-    font-size: 13px;
+    height: 30px;
+    font-size: 15px;
     border: 1px solid rgb(119, 188, 249);
     outline: none;
 }
 
-#addToDo {
-    height: 50px;
-    width: 50px;
+#Submit {
+    height: 60x;
+    width: 80px;
     border: 2px solid rgb(77, 137, 192);
     color: aliceblue;
     vertical-align: middle;
     background-color: rgb(119, 188, 249);
-    font-size: 30px;
-}
-
-.to-dos{
-    margin-top: 25px;
-}
-
-.paragraph-styling{
-    font-style: italic;
-    font-family: 'Bradley Hand', cursive;
-    margin: 20;
-    cursor: pointer;
     font-size: 20px;
 }
 
