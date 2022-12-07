@@ -10,7 +10,7 @@ app.use(bodyParser.urlencoded({extended: true}));
 // import db from 'better-sqlite3';
 // const db = db();
 
-app.use(express.static('public'));
+app.use(express.static('../client'));
 
 //import {MongoClient} from 'mongodb';
 // const url = 'mongodb://0.0.0.0:27017';
