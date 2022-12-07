@@ -9,7 +9,7 @@ const userstmt = db.prepare(`SELECT name FROM sqlite_master WHERE type='table' a
 let userrow = userstmt.get();
 if (userrow === undefined) {
     const userinfoInit = `
-    CREATE TABLE USERINTO (
+    CREATE TABLE USERINFO (
         id INTEGER PRIMARY KEY,
         username VARCHAR,
         email VARCHAR
