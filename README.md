@@ -1,13 +1,22 @@
 # a99-team-17 Final Project
-Group 17's final project
+## To Do List
+Final project for COMP 426 Group 17
+
 
 ## Summary: 
-COMP 426 final project for group 17. This project allows users to keep track of their daily tasks. With an account, users can quickly add and remove a task to their list to stay on top of their work.
+COMP 426 final project for group 17. This project allows users to keep track of their daily tasks. Users can register an account and login to quickly add and remove a task to their list to stay on top of their work.
 
 ## Setup Instructions
 1. To install, clone the repository and run `npm install` inside the directory.
 2. To run, use `npm start`.
 3. Navigate to localhost:5555/
+
+## Dependencies
+<li> better-sqlite3 - v8.0.0
+<li> express - v4.18.2
+<li> minimist - v1.2.7
+<li> mongodb - v4.12.1
+<li> path - v0.12.7
 
 ## Demo
 
@@ -15,32 +24,12 @@ COMP 426 final project for group 17. This project allows users to keep track of 
 ## Team mangement
 Team management details can be found in the following file: [roles.md](/docs/roles.md).
 
-Plan to meet with your team ASAP.
-Talk through identifying roles within your team.
-
-Try to figure out what each of you are good at/enjoy doing and try to work out roles that incorporate that.
-
-Some basic roles you will want to consider:
-
-1. A review manager - someone to review pull requests and merge or reject them and manage the related discussions
-2. A plan manager - someone to keep an eye on the overall plan and keep the project tab/to-do list up to date
-3. A documentation manager - someone to keep the documentation in order and identify what is missing and needs to be documented
-4. A release manager - someone to manage the packaging and release process for your prototype package
-5. A project manager - someone keeping track of all the moving parts and make sure that everything that needs to happen is happening.
-5. Roles for team members to take charge or different parts of the project. Possible roles:
-    1. Front end lead
-    2. Back end lead
-    3. Database lead
-    4. Design lead
-    5. Etc.
-
-You will notice that there are more roles than people in your group.
-That is because you will all be doing a hybrid job of managing a thing while working on other things.
-
 ## Planning
 Our planning details are available in the following file: [planning_notes.md](/docs/planning_notes.md). Additionally, we included a GitHub project board to keep track of our progress.
 
 ## API Endpoints
 The details of our API endpoints can be found in the follwoing file: [api_documentation.md](/docs/api_documentation.md).
 
-## Future
+## Future Extensions
+<li> Ability to show task history
+<li> Ability to customize your page
