@@ -8,4 +8,4 @@ Goal: connect client and server side, test, start creating signup/login pages
 
 ## Meeting 3: December 7th
 Beforehand: continue working on client and server
-Goal: implement the database, test
+Goal: implement the accounts database, test

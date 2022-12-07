@@ -17,6 +17,8 @@ COMP 426 final project for group 17. This project allows users to keep track of 
 <li> minimist - v1.2.7
 <li> mongodb - v4.12.1
 <li> path - v0.12.7
+<li> body-parser - v1.20.1
+<li> http-server - v14.1.1
 
 ## Demo
 
