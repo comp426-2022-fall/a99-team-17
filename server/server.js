@@ -8,21 +8,14 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
 
 import sqlite3 from 'better-sqlite3';
-const db = new sqlite3('data.db');
-db.pragma('journal_mode = WAL');
+const db = new sqlite3('./data.db', sqlite3.OPEN_READWRITE, (err) => {
+    if (err) return console.error(err.message);
+
+    console.log("connection successful");
+});
+
 
 app.use(express.static('../client'));
-
-
-//Misagh 
-// const sqlite3 = require("sqlite3").verbose();
-// const dbMisagh = new sqlite3.Database("./test.db", sqlite3.OPEN_READWRITE, (err) => {
-//     if (err) return console.error(err.message);
-// });
-
-// sql = 'CREATE TABLE users(id, INTEGER PRIMARY KEY, first_name, last_name, username, password, email)';
-// db.run(sql)
-//Misagh End
 
 import minimist from 'minimist';
 const args = minimist(process.argv.slice(2));
@@ -59,3 +52,11 @@ app.post('/aclickss', async (req, res) => {
     console.log(body);
     res.send(body);
 });
+
+
+db.close((err) => { 
+    if (err) {
+        return console.error(err.message);
+    }
+    console.loge('Close the database connection');
+})
