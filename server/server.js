@@ -7,7 +7,7 @@ const __dirname = path.resolve();
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
 
-import db from './database'
+import {db} from './database.js'
 
 app.use(express.static('../client'));
 
