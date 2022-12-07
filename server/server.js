@@ -7,13 +7,7 @@ const __dirname = path.resolve();
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
 
-import sqlite3 from 'better-sqlite3';
-const db = new sqlite3('./data.db', sqlite3.OPEN_READWRITE, (err) => {
-    if (err) return console.error(err.message);
-
-    console.log("connection successful");
-});
-
+import db from './database'
 
 app.use(express.static('../client'));
 
@@ -38,6 +32,44 @@ app.listen(port, function(err) {
 app.get('/', (req, res) => {
     res.send("Hello, world!");
 });
+
+// create user endpoint
+app.post('/user/new/', (req, res, next) => {
+    let userData = {
+        username: req.body.username,
+        email: req.body.email,
+        password: req.body.password
+    }
+
+    const stmt = db.prepare('INSERT INTO userinfo (username, email) VALUES (?, ?)');
+    const info = stmt.run(userData.username, userData.email);
+    res.status(200).json({"message": "user" + userData.username + "created"});
+    console.log(userData);
+    console.log(info);
+});
+
+// read user endpoint
+app.get('/user/info/:username/', (req, res, next) => {
+    let userData = {
+        username: req.params.username
+    }
+})
+
+// delete user info enpoint
+app.delete('/user/bye', (req, res, next) => {
+    let userData = {
+        username: req.body.username
+    }
+});
+
+// send some data endpoint
+app.post('/senddata/:username/', (req, res, next) => {
+    console.log(req.params.username + " logged in with this passwordL " + req.body.password)
+    res.status(200).json({
+        username: req.params.username,
+        password: req.body.password
+    }).end();
+})
 
 app.get('/clicks', (req, res) => {
     console.log("clicks");
