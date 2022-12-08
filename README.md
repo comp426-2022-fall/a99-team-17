@@ -29,8 +29,9 @@ Team management details can be found in the following file: [roles.md](/docs/rol
 Our planning details are available in the following file: [planning_notes.md](/docs/planning_notes.md). Additionally, we included a GitHub project board to keep track of our progress.
 
 ## API Endpoints
-The details of our API endpoints can be found in the follwoing file: [api_documentation.md](/docs/api_documentation.md).
+The details of our API endpoints can be found in the following file: [api_documentation.md](/docs/api_documentation.md).
 
 ## Future Extensions
 <li> Ability to show task history
 <li> Ability to customize your page
+<li> Ability to add in due dates for each task
