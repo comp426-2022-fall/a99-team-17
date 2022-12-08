@@ -1,0 +1,70 @@
+html, body {
+    width: 50%;
+    margin: 0 auto;
+    font-family:'American Typewriter', serif;
+    background-color: aliceblue;
+}
+
+.container {
+    width: 380px;
+}
+
+#inputField {
+    width: 300px;
+    height: 46px;
+    font-size: 13px;
+    border: 1px solid rgb(119, 188, 249);
+    outline: none;
+}
+
+#addToDo {
+    height: 50px;
+    width: 50px;
+    border: 2px solid rgb(77, 137, 192);
+    color: aliceblue;
+    vertical-align: middle;
+    background-color: rgb(119, 188, 249);
+    font-size: 30px;
+}
+
+.to-dos{
+    margin-top: 25px;
+}
+
+.paragraph-styling{
+    font-style: italic;
+    font-family: 'Bradley Hand', cursive;
+    margin: 20;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.sidenav {
+    height: 43%;
+    width: 150px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(77, 137, 192);
+    overflow-x: hidden;
+  }
+
+
+  .sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration-line: underline;
+    line-height: 4;
+    font-weight: 350;
+    font-size: 25px;
+    color: aliceblue;
+    display: flexbox;
+  }
+
+  .login-btn {
+    height: auto;
+    width: auto;
+    border: 2px solid rgb(77, 137, 192);
+    vertical-align: middle;
+    font-size: auto;
+  }
