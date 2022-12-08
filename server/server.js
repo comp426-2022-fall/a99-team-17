@@ -68,7 +68,7 @@ app.get('/login', function(req, res) {
     res.render('login')
 });
 
-app.post('/login', function(res, req) {
+app.post('/login', function(req, res) {
     const user = req.body.username;
     const password = req.body.password;
 
@@ -158,3 +158,7 @@ app.post('/newacc', function(req, res) {
         res.render('username_exists')
     } 
 });
+
+app.post('/logout', (req, res) => {
+    res.render('login');
+})
