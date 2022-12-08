@@ -15,5 +15,5 @@ Post-meeting review:
 3. We discussed potential other features or approaches
 
 ## Meeting 4: December 8th
-Beforehand: complete project and ensure documentation is up to date
+Beforehand: complete project and ensure documentation is up to date; test the app with a variety of different scenarios to ensure everything works as expected
 Goal: record the demo video
