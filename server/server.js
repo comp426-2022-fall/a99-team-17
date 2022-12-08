@@ -62,7 +62,7 @@ app.post('/login', (req, res) => {
     const timeElapsed = Date.now();
     const today = newDate(timeElapsed);
 
-    const stmt1 = `INSERT INTO logs (user, message, time) VALUES ('${user}', 'attempted to login' , '${today.toISOString()}');`;
+    const stmt1 = `INSERT INTO logs (user, task, time) VALUES ('${user}', 'attempted to login' , '${today.toISOString()}');`;
 
     const stmt = db.prepare(`SELECT * FROM users WHERE user='${user}' and password= '${password}';`);
     let row = stmt.get();
@@ -82,7 +82,7 @@ app.get('/index', function(req, res){
 
     let user = req.app.get('user')
 
-    const stmt1 = `INSERT INTO logs (user, message, time) VALUES ('${user}', 'succesful login or return to home', '${today.toISOString()}');`;
+    const stmt1 = `INSERT INTO logs (user, task, time) VALUES ('${user}', 'succesful login or return to home', '${today.toISOString()}');`;
     db.exec(stmt1)
     res.render('index');
 });
@@ -93,7 +93,7 @@ app.get('/acc_info', function(req, res){
 
     let user = req.app.get('user')
     
-    const stmt1 = `INSERT INTO logs (user, message, time) VALUES ('${user}', 'viewed account info', '${today.toISOString()}');`;
+    const stmt1 = `INSERT INTO logs (user, task, time) VALUES ('${user}', 'viewed account info', '${today.toISOString()}');`;
     db.exec(stmt1)
     res.render('acc_info', {user: req.app.get('user'), password: req.app.get('password')});
 });
@@ -102,7 +102,7 @@ app.post('/delete_acc', function(req, res){
     const timeElapsed = Date.now();
     const today = new Date(timeElapsed);
     let user1 = req.body.username
-    const stmt1 = `INSERT INTO logs (user, message, time) VALUES ('${user1}', 'deleted account', '${today.toISOString()}');`;
+    const stmt1 = `INSERT INTO logs (user, task, time) VALUES ('${user1}', 'deleted account', '${today.toISOString()}');`;
     db.exec(stmt1)
 
     const user = req.body.username;
@@ -129,14 +129,14 @@ app.post('/newacc', function(req, res) {
 
     const timeElapsed = Date.now();
     const today = new Date(timeElapsed);
-    const stmt2 = `INSERT INTO logs (user, message, time) VALUES ('${user}', 'tried to create new user', '${today.toISOString()}');`;
+    const stmt2 = `INSERT INTO logs (user, task, time) VALUES ('${user}', 'tried to create new user', '${today.toISOString()}');`;
     db.exec(stmt2)
 
     const stmt1 = db.prepare(`SELECT * FROM users WHERE user='${user}'`);
     let row = stmt1.get();
 
     if (row === undefined) {
-        const stmt = `INSERT INTO users (user, password) VALUES ('${user}', '${password}');`;
+        const stmt = `INSERT INTO users (user, task, password) VALUES ('${user}', '${password}');`;
         db.exec(stmt)
         res.render('new_acc_made');
     } else {
