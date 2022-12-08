@@ -9,3 +9,7 @@ Goal: connect client and server side, test, start creating signup/login pages
 ## Meeting 3: December 7th
 Beforehand: continue working on client and server
 Goal: implement the accounts database, test
+Post-meeting review:
+1. Decided to use ejs, so the plan is to work on that more post-meeting
+2. We made significant progress on developing our database
+3. We discussed potential other features or approaches
