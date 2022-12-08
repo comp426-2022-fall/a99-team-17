@@ -48,10 +48,10 @@ html, body {
     left: 0;
     background-color: rgb(77, 137, 192);
     overflow-x: hidden;
-  }
+}
 
 
-  .sidenav a {
+.sidenav a {
     padding: 6px 8px 6px 16px;
     text-decoration-line: underline;
     line-height: 4;
@@ -59,12 +59,15 @@ html, body {
     font-size: 25px;
     color: aliceblue;
     display: flexbox;
-  }
+}
 
-  .login-btn {
+.login-btn {
     height: auto;
     width: auto;
     border: 2px solid rgb(77, 137, 192);
     vertical-align: middle;
     font-size: auto;
-  }
+    background-color: aliceblue;
+    font-family:'American Typewriter', serif;
+    font-size: large;
+}
