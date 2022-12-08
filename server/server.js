@@ -88,7 +88,8 @@ app.post('/login', function(res, req) {
         req.app.set('user', user);
         req.app.set('password', password);
         res.redirect('/index');
-    }});
+    }
+});
 
 app.get('/acc_info', function(req, res){
     const timeElapsed = Date.now();
@@ -155,14 +156,5 @@ app.post('/newacc', function(req, res) {
         res.render('new_acc_made');
     } else {
         res.render('username_exists')
-    }
-    
-});
-
-app.get('/clicks', (req, res) => {
-    console.log("clicks");
-    res.header('Access-Control-Allow-Origin', '*');
-    res.send({
-        click: "I clicked"
-    });
+    } 
 });
