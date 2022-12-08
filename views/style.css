@@ -40,8 +40,8 @@ html, body {
 }
 
 .sidenav {
-    height: 43%;
-    width: 150px;
+    height: 35%;
+    width: 160px;
     position: fixed;
     z-index: 1;
     top: 0;
@@ -52,7 +52,7 @@ html, body {
 
 
 .sidenav a {
-    padding: 6px 8px 6px 16px;
+    padding: 6px 8px 6px 20px;
     text-decoration-line: underline;
     line-height: 4;
     font-weight: 350;
@@ -68,6 +68,7 @@ html, body {
     vertical-align: middle;
     font-size: auto;
     background-color: aliceblue;
+    color:rgb(77, 137, 192);
     font-family:'American Typewriter', serif;
     font-size: large;
 }
