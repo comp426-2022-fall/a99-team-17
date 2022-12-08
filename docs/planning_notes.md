@@ -10,6 +10,10 @@ Goal: connect client and server side, test, start creating signup/login pages
 Beforehand: continue working on client and server
 Goal: implement the accounts database, test
 Post-meeting review:
-1. Decided to use ejs, so the plan is to work on that more post-meeting
+1. Decided to use ejs, thus scrapping the client side, so the plan is to work on that more post-meeting
 2. We made significant progress on developing our database
 3. We discussed potential other features or approaches
+
+## Meeting 4: December 8th
+Beforehand: complete project and ensure documentation is up to date
+Goal: record the demo video

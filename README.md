@@ -13,11 +13,13 @@ COMP 426 final project for group 17. This project allows users to keep track of 
 
 ## Dependencies
 <li> better-sqlite3 - v8.0.0
+<li> body-parser - v1.20.1
+<li> ejs - v3.1.8
 <li> express - v4.18.2
+<li> http-server - v14.1.1
 <li> minimist - v1.2.7
 <li> path - v0.12.7
-<li> body-parser - v1.20.1
-<li> http-server - v14.1.1
+<li> sqlite3 - v5.1.2
 
 ## Demo
 
