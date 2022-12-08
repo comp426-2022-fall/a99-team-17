@@ -83,7 +83,7 @@ app.post('/login', function(res, req) {
     if (row === undefined) {
         req.app.set('user', user);
         req.app.set('password', password);
-        res.redirect('/bad_login')
+        res.render('bad_login')
     } else {
         req.app.set('user', user);
         req.app.set('password', password);
