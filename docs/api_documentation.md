@@ -36,3 +36,7 @@ All endpoints log an interaction that goes into the logs database. Each interact
 
 ### app.post('/logout')
 <li> Returns user to login page
+
+### app.post('/date')
+<li> Future endpoint
+<li> Displays the due data associated with a task
