@@ -20,7 +20,7 @@ COMP 426 final project for group 17. This project allows users to keep track of 
 6. Click on it again to uncross it
 7. Click three times to delete the task
 8. Click log out button to log out
-9. Navigate to account info to delete page
+9. Navigate to account info to delete
 
 ## Dependencies
 <li> better-sqlite3 - v8.0.0
