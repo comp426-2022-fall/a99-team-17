@@ -22,6 +22,7 @@ COMP 426 final project for group 17. This project allows users to keep track of 
 <li> sqlite3 - v5.1.2
 
 ## Demo
+Our demo can be seen here: 
 
 
 ## Team mangement
